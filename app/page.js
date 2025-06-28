@@ -71,9 +71,10 @@ export default function HomePage() {
         <p className="about-text">
           WeatherNow is a lightweight and responsive weather app that provides
           real-time weather information powered by the OpenWeatherMap API.
-          Whether you're planning a trip or just curious about the climate in
-          another city — WeatherNow has you covered.
+          Whether you&apos;re planning a trip or just curious about the climate
+          in another city — WeatherNow has you covered.
         </p>
+
         <p className="about-text">
           The goal of WeatherNow is not just to provide weather updates, but to
           also serve as a clean, simple, and minimalistic project built using
