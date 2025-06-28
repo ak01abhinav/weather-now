@@ -46,3 +46,22 @@
   box-shadow: 0 0 10px rgba(0, 102, 153, 0.1);
   border-radius: 10px;
 }
+@media (max-width: 768px) {
+  .weather-box {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .weather-search input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .weather-search button {
+    width: 100%;
+  }
+
+  .weather-result {
+    text-align: center;
+  }
+}

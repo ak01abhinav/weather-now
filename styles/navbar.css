@@ -1,9 +1,10 @@
 /* styles/navbar.css */
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 15px 25px;
   background-color: #f0f8ff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: sticky;
@@ -15,21 +16,45 @@
   font-size: 1.5rem;
   color: #006699;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-left: 0;
 }
 
-.navbar-links li a {
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
   text-decoration: none;
   color: #006699;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.navbar-links li a:hover {
+.navbar-links a:hover {
   color: #004d66;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    width: 100%;
+  }
 }
