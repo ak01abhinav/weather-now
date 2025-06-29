@@ -115,6 +115,10 @@ export default function HomePage() {
       {/* Contact Section */}
       <section id="contact" className="contact-container">
         <h1 className="contact-title">Contact Us</h1>
+        <p>
+          Have questions or feedback about our weather service? Get in touch
+          with us using the form below.
+        </p>
         <form onSubmit={handleSubmit} className="contact-form">
           <input
             type="text"
@@ -137,7 +141,7 @@ export default function HomePage() {
             value={formData.message}
             onChange={handleFormChange}
           ></textarea>
-          <button type="submit">Submit</button>
+          <button type="submit">Send Message</button>
         </form>
       </section>
     </main>
